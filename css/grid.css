@@ -1,0 +1,51 @@
+*{
+	box-sizing: border-box;
+}
+
+.title-grid{
+	max-width: 1000px;
+	padding: 0 20px 0 20px;
+	margin: 0 auto;
+}
+
+.logo, .logo-sub{
+	padding-left: 10px;
+}
+
+.catalogue{
+	max-width: 1000px;
+	padding: 0 20px 0 20px;
+	margin: 0 auto;
+}
+
+.box{
+	float: left;
+	display: grid;
+	padding: 10px 10px 10px 10px;
+    max-width: 320px;
+}
+
+.title{
+    float: left;
+	margin-bottom: 0;
+}
+
+.pic{
+	float: left;
+}
+
+.catalogue::before,
+.catalogue::after {
+  display: table;
+  content: '';
+}
+
+.catalogue::after {
+  clear: both;
+}
+
+@media only screen and (min-width: 640px) {
+	.box{
+		min-width: 33.333%;
+	}
+}
